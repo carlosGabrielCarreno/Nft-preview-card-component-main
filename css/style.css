@@ -23,15 +23,36 @@ body {
   border-radius: 1em;
 }
 
+.view {
+  position: absolute;
+  width: 3em;
+  z-index: 1;
+  top: 34%;
+  left: 46%;
+  display: none;
+}
+
 .img {
   width: 100%;
   border-radius: 0.5em;
+  z-index: -1;
 }
+
+.img:hover {
+  /* background-image: #00fff7; */
+  cursor: pointer;
+  filter: opacity(0.4) drop-shadow(0 0 0 #00fff7);
+}
+/* .img:hover::after {
+} */
 .h3 {
   color: #fff;
   margin: 1em 0;
 }
-
+.h3:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
 .p-card-description {
   color: #8bacd9;
   margin: 1em 0;
@@ -93,6 +114,11 @@ body {
 .p-footer {
   padding: 1em;
   color: #fff;
+}
+
+.p-footer:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 .span-word {
