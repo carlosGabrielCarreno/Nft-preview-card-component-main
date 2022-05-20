@@ -43,8 +43,10 @@ body {
   cursor: pointer;
   filter: opacity(0.4) drop-shadow(0 0 0 #00fff7);
 }
-/* .img:hover::after {
-} */
+.img:hover + .view {
+  display: block;
+  cursor: pointer;
+}
 .h3 {
   color: #fff;
   margin: 1em 0;
